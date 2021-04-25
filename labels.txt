@@ -1,0 +1,3 @@
+0 Covid
+1 Healthy
+2 Pneumomia
