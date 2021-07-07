@@ -9,7 +9,7 @@ st.title("Lung Ultrasound Image Classification")
 st.header("Covid ?")
 st.text("Upload a Lung Ultrasound Image for image classification as Covid, Healthy or Pneumonia")
 
-uploaded_file = st.file_uploader("Choose a Lung Ultrasound ...", type="png")
+uploaded_file = st.file_uploader("Choose a Lung Ultrasound ...", type="jpg")
 
 if uploaded_file is not None:
 	image = Image.open(uploaded_file)
