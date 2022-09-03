@@ -3,11 +3,22 @@ from image_classification import teachable_machine_classification
 from PIL import Image, ImageOps
 import numpy as np
 
+st.set_page_config(
+     page_title="DIGI+ Homework App",
+     page_icon="🧊",
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'Get Help': 'https://www.extremelycoolapp.com/help',
+         'Report a bug': "https://www.extremelycoolapp.com/bug",
+         'About': "# This is an DIGI+ cool app!"
+     }
+ )
+st.title("AI-Assisted Hand-held Covid Lung Ultrasound Image Screener")
 
-
-st.title("Lung Ultrasound Image Classification")
-st.header("Covid ?")
-st.text("Upload a Lung Ultrasound Image for image classification as Covid, Healthy or Pneumonia")
+image = Image.open('app_usage.jpg')
+# st.image(image, caption='How This App Interpret Your Lung Ultrasound Image')
+st.image(image,"Upload a Lung Ultrasound Image for image classification as Healthy, Covid or Pneumonia" )
 
 uploaded_file = st.file_uploader("Choose a Lung Ultrasound ...", type="jpg")
 
@@ -23,3 +34,4 @@ if uploaded_file is not None:
 		st.write("The Ultrasound scan is Healthy")
 	else:
 		st.write("The Ultrasound scan is Pneumonia")	
+
