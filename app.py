@@ -9,9 +9,7 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
-         'Get Help': 'https://www.extremelycoolapp.com/help',
-         'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "# This is an DIGI+ cool app!"
+         'About': "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9298069"
      }
  )
 st.title("AI-Assisted Hand-held Covid Lung Ultrasound Image Screener")
